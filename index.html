@@ -6,6 +6,32 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+	<h1>Hangman</h1>
+
+	<div class="imagebox"></div>
+
+	<div class="letterbox"></div>
+
+	<script type="text/javascript">
+		var wordsList = ["blackdahlia", "sunsetdrive", "bluevelvet", "chinatown", "raymondchandler"];
+
+		startGame()
+
+		function startGame() {
+
+			//reset the guesses back to 0, as per Cameron's recommended pseudocode
+
+			var newSolution = wordsList[Math.floor(Math.random() * wordsList.length)];
+
+			var numBlanks = Array.from(newSolution);
+
+			console.log(numBlanks);
+
+		}
+
+
+	</script> 
 	
 </body>
 </html>
