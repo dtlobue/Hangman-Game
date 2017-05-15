@@ -3,15 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hangman: LA Noir</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-	<h1>Hangman</h1>
+	<h1 class="mytitle">Hangman</h1>
 
 	<div class="imagebox"></div>
 
-	<div class="letterbox"></div>
+	<div class="letterbox">
+		<div>Press any key to get started!</div>
+		<br>
+		<div>Wins:</div>
+		<br>
+		<div>Current Word</div>
+		<div id="word-blanks"></div>
+		<br>
+		<div id="guesses-left">Number of Guesses Remaining:</div>
+		<br>
+		<div id="wrong-guesses">Letters Already Guessed:</div>
+	</div>
 
 	<script src="assets/javascript/game.js"></script>
 	

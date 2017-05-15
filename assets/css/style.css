@@ -1,0 +1,21 @@
+body {
+	background-image: url('../images/LA-Noir-ArtDecoBuilding.jpg');
+	background-color: black;
+	position: fixed;
+	z-index: -1;
+}
+
+.mytitle {
+	position: absolute;
+	z-index: 1;
+}
+
+.imagebox {
+	position: absolute;
+	z-index: 1;
+}
+
+.letterbox {
+	position: absolute;
+	z-index: 1;
+}
