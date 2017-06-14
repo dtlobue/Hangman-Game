@@ -1,20 +1,15 @@
 
 		var wordsList = ["blackdahlia", "sunsetdrive", "bluevelvet", "chinatown", "raymondchandler"];
 
+		var numberOfGuesses = 0;
 
-		function startGame() {
+		var newSolution = wordsList[Math.floor(Math.random() * wordsList.length)];
 
-			//reset the guesses back to 0, as per Cameron's recommended pseudocode
-			var numberOfGuesses = 0;
+		var numBlanks = Array.from(newSolution);
 
-			var newSolution = wordsList[Math.floor(Math.random() * wordsList.length)];
+		console.log(numBlanks);
 
-			var numBlanks = Array.from(newSolution);
-
-			console.log(numBlanks);
-
-			// reset the guess and success array at each round. 
-		    // Array of letters (first array, for succesful guesses)
+			 // Array of letters (first array, for succesful guesses)
 		    var successes = 0;
 
             // reset the wrong guesses from the previous round. 
@@ -22,6 +17,12 @@
             var fails = 0;
 
             var blanksAndSuccesses = [];
+
+
+		function startGame() {
+
+			//reset the guesses back to 0, as per Cameron's recommended pseudocode
+			
   				for (var i = 0; i < numBlanks; i++) {
     			   blanksAndSuccesses.push("_");
  						 }
